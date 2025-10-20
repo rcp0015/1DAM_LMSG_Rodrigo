@@ -1,0 +1,148 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi Perfil Profesional</title>
+        <meta name="author" content="Rodrigo Chica Palacios">
+        <meta name="description" content="Página personal creada con HTML">
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #d3d1d1;
+                color: #000000;
+            }
+            nav a {
+                margin-right: 15px;
+                text-decoration: none;
+                color: #4c00ff;
+            }
+        
+            img {
+                border-radius: 10px;
+            }
+        
+            hr {
+                border: 0;
+                height: 1px;
+                background: #ddd;
+                margin: 30px 0;
+            }
+            .section-block {
+                margin-bottom: 30px;
+            }
+            .skills, .interests {
+                margin-bottom: 15px;
+            }
+            mark {
+                background-color: #28f000;
+            }
+            small {
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navegación -->
+        <nav>
+            <a href="#datos">Datos personales</a> |
+            <a href="#formacion">Formación</a> |
+            <a href="#habilidades">Habilidades e intereses</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- Sección 1: Encabezado -->
+        <header>
+            <h1>Mi Perfil Profesional</h1>
+            <hr>
+        
+
+        <!-- Sección 2: Datos personales -->
+        <!-- Sección de datos personales -->
+        <section id="datos" class="section-block">
+            <h2>Datos personales</h2>
+            <div>
+                <img src="https://www.famousbirthdays.com/faces/misha-miguel-image.jpg" 
+                    alt="Foto de perfil de Tu Nombre" 
+                    title="Tu Nombre Completo" 
+                    width="150" height="150">
+                <dl>
+                    <dt>Nombre completo:</dt>
+                    <dd>Rodrigo Chica Palacios</dd>
+
+                    <dt>Edad:</dt>
+                    <dd>18 años</dd>
+
+                    <dt>Ciudad:</dt>
+                    <dd>Jaén, España</dd>
+
+                    <dt>Email:</dt>
+                    <dd><a href="rcp0015@alu.medac.es">rcp0015@alu.medac.es</a></dd>
+                </dl>
+                <p>Soy una persona apasionada por la <span>tecnología</span> y el aprendizaje continuo.</p>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Sección 3: Formación -->
+            <h2>Formación</h2>
+            <ol>
+                <li><strong>Grado en Ingeniería Informática</strong> - Universidad de Jaén <small>(2015 - 2019)</small></li>
+                <li><strong>Curso de Desarrollo Web</strong> - <em>Medac Jaén</em> <small>(2020)</small></li>
+                <li><strong>Máster en Inteligencia Artificial</strong> - Universidad Autónoma de Madrid <small>(2021 - 2022)</small></li>
+            </ol>
+                
+        </section>
+        <hr>
+
+        <!-- Sección 4: Habilidades e intereses -->
+        <section id="habilidades" class="section-block">
+            <h2>Habilidades e intereses</h2>
+            <div class="skills">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li><mark>Programación</mark> en Python, JavaScript y Java</li>
+                    <li>Diseño y desarrollo web</li>
+                    <li>Base de datos y SQL</li>
+                    <li>Trabajo en equipo y liderazgo</li>
+                </ul>
+            </div>
+            <div class="interests">
+                <h3>Intereses</h3>
+                <ul>
+                    <li>Inteligencia Artificial</li>
+                    <li>Big Data y análisis de datos</li>
+                    <li>Viajar y conocer nuevas culturas</li>
+                    <li>motos</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Sección 5: Contacto y enlaces -->
+        <section id="contacto" class="section-block">
+            <h2>Contacto y enlaces</h2>
+            <p>Puedes visitar mis perfiles en:</p>
+            <ul>
+                <li><a href="https://github.com/tu_usuario" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/tu_usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://tu_blog_personal.com" target="_blank" rel="noopener">Mi Blog</a></li>
+            </ul>
+            <p> <a href="mailto:tu.email@example.com">Email</a>.</p>
+            <p><a href="#datos">Volver a Datos personales</a></p>
+        </section>
+        <hr>
+
+        <!-- Sección 6: Contenido multimedia -->
+        <section id="multimedia" class="section-block">
+            <h2>Ubicación del centro MEDAC Jaén</h2>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468.6464798442703!2d-3.7856061215940024!3d37.79788619747314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sDavante%20MEDAC%20Aventura%20%F0%9F%A5%87%20Centro%20FP%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1760277795529!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </body>
+    </html>
