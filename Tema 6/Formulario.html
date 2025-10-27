@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="proceso.php">
+        <fieldset>
+            <legend><b>Datos Personales</b></legend>
+            <p><b>Fecha:</b> <input type="date" name="Fecha"></p>
+            <p><b>Nombre:</b> <input type="text" name="Nombre" size="45" placeholder="Nombre Completo"></p>
+            <p><b>Correo:</b> <input type="email" name="Correo"></p>
+        </fieldset>
+        <fieldset>
+            <legend><b>Datos de interes</b></legend>
+            <p><b>¿Estas casado?</b>
+                <input type="radio" name="p1"> Si
+                <input type="radio" name="p2"> No
+            </p>
+            <p><b>Numero de Hijos</b>
+                <input type="number" min="0" max="10" size="4" name="Hijos">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
