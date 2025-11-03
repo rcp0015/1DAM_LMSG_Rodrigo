@@ -1,0 +1,23 @@
+#titulo {
+    background-color: black;
+    color: white;
+    width: 600px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#apartado1, #apartado2, #apartado3, #apartado4,
+#apartado5, #apartado6, #apartado7 {
+    background-color: chocolate;
+    color: white;
+    width: 600px;
+    font-size: 1.5rem;
+}
+
+.subapartado {
+    background-color: #aaaaaa;
+    border: solid 3px black;
+    width: 600px;
+}
+
+#apartado1 + .subapartado em, #apartado1 { color: blue}
