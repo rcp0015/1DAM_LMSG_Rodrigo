@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table {
+            caption-side: bottom;
+            border-spacing: 15px;
+            width: 100%;
+            border: solid 3px blue;
+        }
+
+        th,
+        td {
+            border: solid 1px blue;
+            height: 40px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        th {
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption><b>Fig. 1.–</b> Precio de las naranjas</caption>
+        <thead>
+            <tr>
+                <th>Provincia</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Málaga</td>
+                <td>0,54€</td>
+            </tr>
+            <tr>
+                <td>Granada</td>
+                <td>0,45€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Promedio</th>
+                <th>0,5€</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
