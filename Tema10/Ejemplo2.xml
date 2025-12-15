@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"
+standalone="no"?>
+<?xml-stylesheet href="estilos_xml.css" type="text/css"?>
+<biblioteca ciudad="Malaga">
+    <informatica>
+        <libro>
+            <nombre>Introduccion a xml</nombre>
+            <editorial>Prainfo</editorial>
+            <paginas>345</paginas>
+        </libro>
+        <libro>
+            <nombre>CSS3</nombre>
+            <editorial>Sintesis</editorial>
+            <paginas>234</paginas>
+        </libro>
+    </informatica>
+    <literatura>
+        <libro>
+            <nombre>El señor de los anillos</nombre>
+            <editorial>Minosaurio</editorial>
+            <paginas>234</paginas>
+        </libro>
+    </literatura>
+</biblioteca>

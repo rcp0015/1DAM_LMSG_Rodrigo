@@ -1,0 +1,21 @@
+nombre{
+    font-size: 2rem ;
+    display: block;
+    border: solid 2px  rgb(255, 0, 166);
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+diasentrega{
+    color: red;
+    display: block;
+    padding-left: 50px;
+    font-size: 1.5rem;
+}
+
+#especial{
+    background-color: aqua;
+}

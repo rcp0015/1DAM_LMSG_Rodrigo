@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE texto [
+    <!ELEMENT texto (contenido)>
+    <!ENTITY asiganturas "6">
+    <!ELEMENT contenido (#PCDATA)>
+]>
+
+<texto>
+<contenido>El curso tiene &asiganturas; asignaturas</contenido>
+</texto>
