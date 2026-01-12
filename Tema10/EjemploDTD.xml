@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE biblioteca  SYSTEM "Ejemplo_dtd.dtd">
+
 <biblioteca>
     <libro>
         <nombre>Introduccion a xml</nombre>

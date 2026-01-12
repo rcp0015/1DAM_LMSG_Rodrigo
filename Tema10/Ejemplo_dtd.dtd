@@ -6,3 +6,8 @@
 <!ELEMENT paginas (#PCDATA)>
 <!ELEMENT precio (#PCDATA)>
 <!ELEMENT precio_con_iva (#PCDATA)>
+<!--
+     + mas de uno
+    ? OPCIONAL
+    * 0 a muchos    
+-->

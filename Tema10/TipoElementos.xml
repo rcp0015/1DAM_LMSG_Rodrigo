@@ -16,7 +16,7 @@ sueldo CDATA #IMPLIED>
         <nombre>Alberto Ruiz</nombre>
         <edad>56</edad>
     </empleado>
-
+ 
     <empleado sexo="h" sueldo="600">
         <nombre>Laura Marrash</nombre>
         <edad>99</edad>
