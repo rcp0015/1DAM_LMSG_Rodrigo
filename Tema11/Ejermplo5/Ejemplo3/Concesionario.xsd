@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Concesionario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="coche" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="matricula" type="xs:string"></xs:element>
+                            <xs:element name="marca" type="xs:string"></xs:element>
+                            <xs:element name="modelos" type="xs:string"></xs:element>
+                            <xs:choice>
+                                <xs:element name="cilindrada" type="xs:decimal"></xs:element>
+                                <xs:element name="caballos" type="xs:string"></xs:element>
+                            </xs:choice>
+                            <xs:element name="combustible" type="xs:string"></xs:element>
+                            <xs:element name="precio" type="xs:string"></xs:element>
+                            <xs:element name="año" type="xs:unsignedShort" minOccurs="0"></xs:element>
+                            <xs:element name="color" type="xs:string"></xs:element>
+                            <xs:element name="interesado" type="xs:string" minOccurs="0"
+                                maxOccurs="unbounded"></xs:element>
+                            <xs:element name="accesorios" minOccurs="0" type="xs:string"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="año" type="xs:unsignedShort" use="optional"></xs:attribute>
+                        <xs:attribute name="interesado" type="xs:string" use="optional"></xs:attribute>
+                    
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="provincia" type="xs:string" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- TIPO DE COMBUSTIBLE-->
+
+    <xs:simpleType name="combustible">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Diesel"></xs:enumeration>
+            <xs:enumeration value="Gasolina"></xs:enumeration>
+            <xs:enumeration value="diesel"></xs:enumeration>
+            <xs:enumeration value="gasolina"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- MAXIMO Y MINIMO DE CABALLOS-->
+
+    <xs:simpleType name="caballos">
+        <xs:restriction base="xs:unsignedShort">
+            <xs:minInclusive value="60"></xs:minInclusive>
+            <xs:maxInclusive value="180"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- AÑOS DE 4 CIFRAS-->
+
+     <xs:simpleType name="año">
+        <xs:restriction base="xs:unsignedShort">
+            <xs:totalDigits value="4"></xs:totalDigits>
+        </xs:restriction>
+     </xs:simpleType>
+
+<!--DNI -->
+     <xs:simpleType name="interesado">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]"></xs:pattern>
+        </xs:restriction>
+     </xs:simpleType>
+
+     <!-- NUMERO DE ACCESORIOS-->
+<xs:simpleType name="accesorios">
+    <xs:list itemType="xs:string"></xs:list>
+</xs:simpleType>
+
+<xs:simpleType name="tresaccesosios">
+    <xs:restriction base="accesorios">
+        <xs:maxLength value="3"></xs:maxLength>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
