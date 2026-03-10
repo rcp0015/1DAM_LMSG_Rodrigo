@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica LLMM: Tabla y Formulario</title>
+</head>
+<body>
+
+    <br><hr><br>
+
+    <form action="proceso.php" method="post">
+        
+        <fieldset>
+            <legend>1. Datos Personales</legend>
+            
+            <div class="campo">  <!-- Aqui pedimos el nombre al usuario-->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo"> <!-- Aqui pedimos el apellido al usuario-->
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div class="campo"> <!-- Aqui pedimos la edad al usuario-->
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="16" max="99" required>
+            </div>
+
+            <div class="campo">
+                <label>Género:</label>  <!-- Aqui pedimos el genero al usuario-->
+                <input type="radio" id="hombre" name="genero" value="hombre" required>
+                <label for="hombre" class="label-auto">Hombre</label>
+                
+                <input type="radio" id="mujer" name="genero" value="mujer">
+                <label for="mujer" class="label-auto">Mujer</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Contacto</legend>  
+
+            <div class="campo">
+                <label for="email">Email:</label>  <!-- Aqui pedimos el email al usuario para contatar con el -->
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="cp">Código Postal:</label> <!-- Aqui pedimos el codigo postal al usuario para poder contactar con el usuario-->
+                <input type="text" id="cp" name="cp" pattern="[0-9]{5}" title="Debe ser 5 dígitos" required>
+            </div>
+
+            <div class="campo">
+                <label for="direccion">Dirección:</label> <!-- Aqui pedimos la direccion al usuario para poder contactar con el-->
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+
+            <div class="campo">  <!-- Aqui pedimos la ciudad usuario, ponemos varias opciones-->
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad">
+                    <option value="sevilla">Sevilla</option>
+                    <option value="malaga">Málaga</option>
+                    <option value="granada">Granada</option>
+                    <option value="jaen" selected>Jaén</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="almeria">Almería</option>
+                    <option value="huelva">Huelva</option>
+                    <option value="cadiz">Cádiz</option>
+                </select>
+            </div>
+
+            <div class="campo">  <!-- Aqui pedimos la contraseña al usuario por seguridad-->
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Datos de Interés</legend>
+
+            <div class="campo">  <!-- Aqui pedimos el estado civil del usuario-->
+                <label>Estado Civil:</label>
+                <input type="radio" id="casado" name="estado_civil" value="casado">
+                <label for="casado" class="label-auto">Casado/a</label>
+                
+                <input type="radio" id="no_casado" name="estado_civil" value="no_casado" checked>
+                <label for="no_casado" class="label-auto">No Casado/a</label>
+            </div>
+
+            <div class="campo">
+                <label>Hobbies:</label> <!-- Aqui pedimos los hobbies al usuario-->
+                <input type="checkbox" id="deporte" name="hobbies[]" value="deporte"> Deporte
+                <input type="checkbox" id="cine" name="hobbies[]" value="cine"> Cine
+                <input type="checkbox" id="lectura" name="hobbies[]" value="lectura"> Lectura
+                <input type="checkbox" id="correr" name="hobbies[]" value="correr"> Correr
+            </div>
+
+            <div class="campo">
+                <label for="comentarios" style="vertical-align: top;">Comentarios:</label>  <!-- Aqui pedimos si el usuario quiere poner alguna informacion aparte de las anteriores-->
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí cualquier información adicional..."></textarea>
+            </div>
+        </fieldset>
+
+        <div class="botonera">  
+            <input type="submit" value="Enviar Datos"> <!--Enviamos el formulario -->
+            <input type="reset" value="Resetear Formulario"> <!--Reiniciamos el formulario, para volver a hacerlo -->
+        </div>
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
