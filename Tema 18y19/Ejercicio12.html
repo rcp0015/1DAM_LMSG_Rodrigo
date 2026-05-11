@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio12</title>
+</head>
+<body>
+    // Primitiva: Realiza un script que genere 6 número aleatorio entre 1 y 49 y los almacene en un array para mostrarlos por pantalla.
+
+    <script>
+        var array = [];
+
+        for(i=1; i=6; i++){
+        var numero = Math.floor(Math.random()*49)+1;
+        array.push(numero);
+
+        if(array.includes(numero))
+            array.push(numero);
+        else
+        i --;
+    
+        }
+
+        document.write(array);
+    </script>
+    
+    
+</body>
+</html>

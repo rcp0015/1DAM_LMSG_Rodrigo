@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio13</title>
+</head>
+<body>
+
+    
+    // Quiniela: Crea un script que imprima 14 resultados aleatorios de una quiniela 1 X 2. Ejemplo de resultado:Resultado 1: 1
+    //Resultado 2: X
+    //Resultado 3: 2
+    //.....
+    //Resultado 14: 2
+
+    <script>
+        var opciones = [ "1", "x", "2"];
+
+        for(i = 1 ; i <= 14; i ++){
+            var num = Math.floor(Math.random()*opciones.length);
+            document.write ("Resultado: " + i + ":" + opciones[num] + "<br>")
+        }
+    </script>
+    
+</body>
+</html>

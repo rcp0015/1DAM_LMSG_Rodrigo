@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio11</title>
+</head>
+<body>
+
+    // Crea una función en JavaScript que permita al usuario introducir texto en un campo de formulario.
+    //Al hacer clic en un botón, dicho texto debe añadirse como un nuevo elemento <li> dentro de una lista <ul>.
+    //Si el campo está vacío, el fondo del campo de texto debe ponerse rojo para indicar error.
+
+    <input id="newLine" type="text" name="newLine">
+    <button onclick="addElement()">Crear</button>
+
+    <ul></ul>
+
+    <script>
+
+        function addElement(){
+
+            var entrada = document.getElementById("newLine");
+            var texto = entrada.value;
+
+            if(texto == ""){
+                entrada.style.backgroundColor = "red";
+                alert("Escribe");
+            }
+            else{
+                entrada.style.backgroundColor = "white";
+
+                var lista = document.getElementsByTagName("ul")[0];
+                var nuevoLi = document.createElement("li");
+
+                nuevoLi.innerHTML = texto;
+
+                lista.appendChild(nuevoLi);
+
+                entrada.style.backgroundColor = "white";
+                entrada.value = "";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
