@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+    
+    <channel>
+        
+        <title>Gaming News Hub</title>
+        
+        <link>https://github.com/usuario/rss-gaming</link>
+        
+        <description>
+            Noticias y novedades sobre videojuegos y tecnología gaming.
+        </description>
+        
+        <language>es-es</language>
+        
+        <atom:link
+            href="https://raw.githubusercontent.com/usuario/rss-gaming/main/feed.xml"
+            rel="self"
+            type="application/rss+xml" />
+        
+        <item>
+            
+            <title>Nuevo GTA VI anunciado oficialmente</title>
+            
+            <description>
+                Rockstar Games publica el primer tráiler oficial de GTA VI.
+            </description>
+            
+            <link>https://www.rockstargames.com/gta-vi</link>
+            
+            <pubDate>Tue, 20 May 2025 10:00:00 GMT</pubDate>
+            
+            <author>admin@gaminghub.com (Gaming Hub)</author>
+            
+            <category>Videojuegos</category>
+            
+            <guid isPermaLink="false">gta6-001</guid>
+            
+        </item>
+        
+        <item>
+            
+            <title>Nintendo presenta su nueva consola</title>
+            
+            <description>
+                Nintendo muestra las características de su nueva generación.
+            </description>
+            
+            <link>https://www.nintendo.com</link>
+            
+            <pubDate>Tue, 20 May 2025 11:00:00 GMT</pubDate>
+            
+            <author>admin@gaminghub.com (Gaming Hub)</author>
+            
+            <category>Tecnología</category>
+            
+            <guid isPermaLink="false">nintendo-002</guid>
+            
+        </item>
+        
+        <item>
+            
+            <title>Steam bate récord de jugadores</title>
+            
+            <description>
+                Steam alcanza un nuevo récord histórico de usuarios conectados.
+            </description>
+            
+            <link>https://store.steampowered.com</link>
+            
+            <pubDate>Tue, 20 May 2025 12:00:00 GMT</pubDate>
+            
+            <author>admin@gaminghub.com (Gaming Hub)</author>
+            
+            <category>PC Gaming</category>
+            
+            <guid isPermaLink="false">steam-003</guid>
+            
+        </item>
+        
+        <item>
+            
+            <title>Xbox anuncia nuevos juegos exclusivos</title>
+            
+            <description>
+                Microsoft revela nuevos títulos exclusivos para Xbox Series X.
+            </description>
+            
+            <link>https://www.xbox.com</link>
+            
+            <pubDate>Tue, 20 May 2025 13:00:00 GMT</pubDate>
+            
+            <author>admin@gaminghub.com (Gaming Hub)</author>
+            
+            <category>Xbox</category>
+            
+            <guid isPermaLink="false">xbox-004</guid>
+            
+        </item>
+        
+        <item>
+            
+            <title>PlayStation actualiza PS5</title>
+            
+            <description>
+                Sony publica una nueva actualización para mejorar el rendimiento.
+            </description>
+            
+            <link>https://www.playstation.com</link>
+            
+            <pubDate>Tue, 20 May 2025 14:00:00 GMT</pubDate>
+            
+            <author>admin@gaminghub.com (Gaming Hub)</author>
+            
+            <category>PlayStation</category>
+            
+            <guid isPermaLink="false">ps5-005</guid>
+            
+        </item>
+        
+    </channel>
+    
+</rss>
